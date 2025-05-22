@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>Folha de Pagamento</title>
+</head>
+
+<body>
+  <h1>Folha de Pagamento</h1>
+  <section class="container">
+    <form>
+      <div class="formulario">
+        <label for="nome">Nome do funcionário:</label>
+        <input type="text" id="nome" required/>
+      </div>
+
+      <section class="formulario">
+        <label for="cargo">Cargo:</label>
+        <select id="cargo" required>
+          <option value="0">SELECIONE UM CARGO</option>
+          <option value="1200">Recepcionista de Clínica - R$ 1.200</option>
+          <option value="1000">Auxiliar de Serviços Gerais - R$ 1.000</option>
+          <option value="1800">Auxiliar de Enfermagem - R$ 1.800</option>
+          <option value="2500">Técnico em Radiologia - R$ 2.500</option>
+          <option value="2000">Técnico de Enfermagem - R$ 2.000</option>
+          <option value="3500">Fisioterapeuta - R$ 3.500</option>
+          <option value="3800">Nutricionista - R$ 3.800</option>
+          <option value="4200">Gobete - R$ 4.200</option> 
+        </select>
+      </section>
+
+      <div id="opcoes">
+        <section class="formulario">
+          <fieldset>
+            <legend>Benefícios</legend>
+            <input type="checkbox" class="beneficios" value="300"> Vale-Transporte (+R$ 300) <br>
+            <input type="checkbox" class="beneficios" value="400"> Plano de Saúde (+R$ 400)
+          </fieldset>
+        </section>
+
+        <section class="formulario">
+          <fieldset>
+            <legend>Tipo de Contrato</legend>
+            <input type="radio" name="contrato" value="20" class="contrato"> CLT (Desconte de 20%) <br>
+            <input type="radio" name="contrato" value="5" class="contrato"> PJ (Desconto de 5%)
+          </fieldset>
+        </section>
+      </div>
+
+      <button type="button" onclick="calcular()">Calcular Folha</button>
+    </form>
+
+    <div class="resultado" id="resultado"></div>
+  </section>
+</body>
+
+</html>

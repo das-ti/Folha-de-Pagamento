@@ -36,11 +36,11 @@ function calcular() {
       salario_liquido = cargo - descontos - total_beneficio;
 
       resultado.innerHTML =
-        "<p><b>Funcionário: </b></p> " +nome +
-        "<p><b>Salário Base: </b></p>R$ " +cargo.toFixed(2).replace(".", ",") +
-        "<p><b>Benefícios: </b></p>R$ " +total_beneficio.toFixed(2).replace(".", ",") +
-        "<p><b>Descontos (" +porcentagem_desconto +"%): </b></p> R$ " +descontos.toFixed(2).replace(".", ",") +
-        "<p><b>Salário Líquido: </b></p> R$ " +salario_liquido.toFixed(2).replace(".", ",");
+        "<p><b>Funcionário: </b> " +nome + "</p>"
+        "<p><b>Salário Base: </b>R$ " +cargo.toFixed(2).replace(".", ",") + "</p>"
+        "<p><b>Benefícios: </b>R$ " +total_beneficio.toFixed(2).replace(".", ",") + "</p>"
+        "<p><b>Descontos (" +porcentagem_desconto +"%): </b> R$ " +descontos.toFixed(2).replace(".", ",") + "</p>"
+        "<p><b>Salário Líquido: </b>R$ " +salario_liquido.toFixed(2).replace(".", ",") +"</p>";
     }
   }
 }
